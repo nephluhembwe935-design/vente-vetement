@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vente de vêtements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+    <h1>Bienvenue sur notre boutique de vêtements</h1>
+    <nav>
+      <a href="#products">Produits</a>
+      <a href="#cart">Panier (<span id="cart-count">0</span>)</a>
+      <a href="#account">Mon compte</a>
+    </nav>
+</header>
+<!-- Boutons de navigation -->
+<div class="category-buttons">
+  <button onclick="location.href='#pantalons'">Pantalons</button>
+  <button onclick="location.href='#chemises'">Chemises</button>
+  <button onclick="location.href='#pulls'">Pull chaud</button>
+</div>
+
+<!-- Section produits Pantalons -->
+<section id="pantalons">
+  <h2>Pantalons</h2>
+  <!-- Liste des pantalons ici -->
+</section>
+
+<!-- Section produits Chemises -->
+<section id="chemises">
+  <h2>Chemises</h2>
+  <!-- Liste des chemises ici -->
+</section>
+
+<!-- Section produits Pulls chauds -->
+<section id="pulls">
+  <h2>Pulls chauds</h2>
+  <!-- Liste des pulls ici -->
+</section>
+<button onclick="window.location.href='pantalon.html'">Pantalons</button>
+<button onclick="window.location.href='chemise.html'">Chemises</button>
+<button onclick="window.location.href='pull.html'">Pull chaud</button>
+  
+  <section id="products">
+    <h2>Nos vêtements</h2>
+    <div class="product-list">
+      <div class="product" data-id="1">
+        <div class="img-placeholder"><img src="t-shirt.jpeg" alt=""></div>
+        <h3>T-shirt Blanc</h3>
+        <p class="price">15 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="2">
+        <div class="img-placeholder"><img src="jean.jpeg" alt=""></div>
+        <h3>Jean Bleu</h3>
+        <p class="price">40 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="3">
+        <div class="img-placeholder"><img src="veste cuir.jpeg" alt=""></div>
+        <h3>Veste en cuir</h3>
+        <p class="price">85 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="4">
+        <div class="img-placeholder"><img src="robe rouge.jpeg" alt=""></div>
+        <h3>Robe Rouge</h3>
+        <p class="price">60 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="5">
+        <div class="img-placeholder"><img src="pull en laine.jpeg" alt=""></div>
+        <h3>Pull en laine</h3>
+        <p class="price">50 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="6">
+        <div class="img-placeholder"><img src="chaussur noire.jpeg" alt=""></div>
+        <h3>Chaussures noires</h3>
+        <p class="price">70 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="7">
+        <div class="img-placeholder"><img src="casquette grise.jpeg" alt=""></div>
+        <h3>Casquette grise</h3>
+        <p class="price">12 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="8">
+        <div class="img-placeholder"><img src="short ete.jpeg" alt=""></div>
+        <h3>Short été</h3>
+        <p class="price">25 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="9">
+        <div class="img-placeholder"><img src="blouse fleuri.jpeg" alt=""></div>
+        <h3>Blouse fleurie</h3>
+        <p class="price">35 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <div class="product" data-id="10">
+        <div class="img-placeholder"><img src="manteau d'hivere.jpeg" alt=""></div>
+        <h3>Manteau d'hiver</h3>
+        <p class="price">120 €</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Panier</h2>
+    <div id="cart-items"></div>
+    <p>Total: <span id="cart-total">0</span> €</p>
+    <button id="checkout-btn">Passer à la caisse</button>
+  </section>
+
+   <section id="account">
+    <h2>Mon compte</h2>
+    <form>
+        <input type="email" id="email" placeholder="Votre Email" required>
+        <input type="password" id="password" placeholder="Mot de passe" required>
+        <button type="submit">Se connecter</button>
+    </form>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
